@@ -1,0 +1,107 @@
+Hei, tervetuloa käyttämään reseptikirjaa!
+
+Tähän kenttään keskellä tulee kaikki informaatio aineksista ja resepteistä.
+
+ Käyttöliittymän rakenne:
+
+ Ylhäällä: Hakukenttiä
+ Vasemmalla: Tunnetut reseptit
+ Oikealla: Toimintanappuloita
+ Keskellä: Informaatiota sisältävä tekstikenttä
+ Alhaalla: Aineksien ja reseptien-luontikentät
+
+ Hakukentät:
+
+ Etsi resepti: 
+-Kirjoita tähän reseptin nimen jonka haluat etsiä,
+ jos olet luonut itsellesi kyseisen
+ reseptin. Lopuksi paina Etsi resepti nappia.
+Ilman allergeenia:
+-Kirjoita tähän allergeenin nimi, jota et halua löytää
+ kun painat AllegeeninMukaan-nappia. Jos sinulla 
+ on respeti kirjoitettuna "hae resepti"-kenttään,
+ ja se sisältää kyseistä allergeenia, tulee tästä ilmoitus.
+ Aineksen mukaan:
+-Kirjoita tähän aineksen numi, jonka haluat löytyvän reseptistäsi,
+ reseptikirja antaa nimet kaikille resepteille,
+ joista löytyy kyseistä ainesoaa. 
+ Paina lopuksi AineksenMukaan-nappia
+
+ Reseptinapit:
+
+-Paina joitakin reseptinapeista nähdäksesi,
+ mitä ainesosia kyseinen resepti vaatii.
+
+ Toimintanapit (ylin oikean paneelin osio):
+
+-Ohjeet-napista saat nämä ohjeet tekstikenttään keskelle.
+-Ainekset-nappi näyttää kaikki tuntemasi ainekset
+ ja niiden määrät kaapissasi.
+-Vajavaiset nappi etsii kaikki reseptit, joita
+ ei kokonaan voi tehdä, ja jos reseptissä on ainesosaa,
+ esim voitaikinaa, joka koostuu voista ja jauhoista,
+ etsii se onko mahdollista tehdä kaapista löytyvistä
+ ainesosista näitä ainesosia ja ilmoittaa ne.
+-Kokonaan-nappi näyttää kaikki reseptit, joihin sinulla
+ on kaapissasi ainekset ja tarpeeksi niitä.
+
+ Puutuu Täsmälleen-kenttä
+
+-Puuttuu täsmälleen napilla, ja sen vierestä löytyvällä
+ kentällä pystyy etsimään reseptit, joista puuttuu
+ täsmälleen x-määrä jotain ainetta. Kirjoita numero
+ kenttään ja paina puuttuu täsmälleen-nappia, niin näät
+ kyseiset reseptit.
+ 
+ Ainesosan käyttäminen ja lisääminen 
+
+-Ainesosan käyttäminen ja lisääminen tapahtuu saman kentän
+ kautta. Kirjoita kenttään, paljonko haluat tiettyä ainesta
+ lisättävän tai vähennettävän ja paina "käytä ainesosa"-
+ tai "Lisää ainesosa"-nappia. Ohjelma laskee onko määrä sallittu.
+
+ Reseptin valmistaminen
+
+-Reseptin valmistaminen tapahtuu syöttämällä reseptin 
+nimi, valmista-kenttään ja painamalla valmista nappia.
+ Jos tarvittavat ainekset löytyivät, vähennetään ne kaapistasi.
+
+Poistamiskenttä (alin oikean paneelin osio):
+
+-Voit poistaa aineksia tai reseptejä kirjoittamalla aineen nimeen
+ "Ainesosa"-kenttään tai reseptin nimen "Resepti"-kenttään. Oikean
+ paneelin alimmaisessa osassa. Kirjoita siis aineen tai reseptin nimi
+ ja paina poista nappia, niin se poistuu tietokannasta. Huomaa, että 
+ ennen kun poistat ainesosan, niin kaikki reseptit jotka sisältävät
+ tätä ainesosaa, pitä olla poistettu ensin.
+
+Lisäyskenttä (alin paneeli):
+
+Alhaalla olevasta paneelista voi lisätä aineksia ja
+ reseptejä. Huomaa, ettet voi lisätä reseptiin aineksia
+ joita et jo tunne, joten jos haluat lisätä reseptiin
+ aineksen, jota sinulla ei ole. Lisää ensin siitä aines
+ kirjastoon, jonka määrä on nolla.
+-Aineksen lisääminen tapahtuu seuraavasti:
+1. Lisää aineksen nimi kenttään aineksen nimi
+2. Lisää aineksen määrä-kenttään aineksen määrä grammoissa
+3. Lisää Allergeenin nimi kenttään allergeenin nimi, jos
+ ainesosa sellaista sisältää
+4. Sisältää kenttään voit lisätä ainekset, josta tämä
+ ainesosa voidaan muodostaa syntaksilla aines1,aines2,aines3,…,ainesN
+5.Tiheyskenttä ja yksikönmuunnos checkbox toimivat käsi
+ kädessä. Jos haluat aineksen esitettävän resepteissä
+ millilitroissa, etkä grammoissa, lisää tähän kenttään
+ aineen tiheyskerroin, jolla se voidaan muuntaa
+ ainesosakirjastossa grammoista litroiksi. Tämän lisäksi
+ paina yksikönmuunnos-checkboxia.
+Jos haluat aineen esitettävän grammoissa, älä kiinnitä
+ huomita Tiheys-kenttään ja yksikönmuunnos-nappiin.
+6. Paina Lisää aines-nappia
+-Reseptin lisääminen:
+1.Kirjoita reseptin nimi "Reseptin nimi"-kenttään.
+2.Kirjoita tarvittavat aineet ja määrät "Tarvittavat ainekset
+ ja määrät"- kenttään syntaksilla 
+aines1-300,aines2-400,aines3-500,…ainesN-määrä
+ (Huomaa taas, että ainekset täytyy löytyä tunnettuna kirjastostasi,
+ ainakin määrällä 0g)
